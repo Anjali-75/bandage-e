@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.Auth">
+
+    <TextView
+        android:id="@+id/bandage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="90dp"
+        android:text=""
+        android:textColor="#253DA1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back to \nBandage"
+        android:textColor="@color/black"
+        android:layout_marginTop="12dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/bandage"
+        app:layout_constraintTop_toBottomOf="@id/bandage" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email/ Phone"
+        app:layout_constraintStart_toStartOf="@id/textLogin"
+        app:layout_constraintTop_toBottomOf="@id/textLogin"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="70dp"
+        />
+
+    <EditText
+        android:id="@+id/emailTextBoxLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/textLogin"
+        app:layout_constraintTop_toBottomOf="@id/emailText"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:textColor="@color/black"
+        android:background="#FDFAFD"
+        android:textSize="15dp"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:hint="xxxx@gmail.com"
+        android:textColorHint="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        app:layout_constraintStart_toStartOf="@id/emailText"
+        app:layout_constraintTop_toBottomOf="@id/emailTextBoxLogin"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        />
+
+    <EditText
+        android:id="@+id/passwordTextBoxLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/passwordText"
+        app:layout_constraintTop_toBottomOf="@id/passwordText"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:textColor="@color/black"
+        android:background="#FDFAFD"
+        android:textSize="15dp"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        android:hint="add password"
+        android:autofillHints="password"
+        android:inputType="textPassword"
+        />
+
+    <TextView
+        android:id="@+id/wrongPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/passwordTextBoxLogin"
+        app:layout_constraintTop_toBottomOf="@id/passwordTextBoxLogin"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:textColor="#FF0000"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/passwordTextBoxLogin"
+        app:layout_constraintTop_toBottomOf="@id/passwordTextBoxLogin"
+        android:padding="16dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:text="Login"
+        android:background="@drawable/round_btn"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="90dp"
+        />
+
+    <TextView
+        android:id="@+id/newUserText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New user?"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="21dp"
+        />
+    <TextView
+        android:id="@+id/registerTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Register"
+        android:textStyle="bold"
+        android:textColor="#253DA1"
+        app:layout_constraintStart_toEndOf="@id/newUserText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="21dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

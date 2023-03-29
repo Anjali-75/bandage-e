@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    tools:context=".Activity.Cart"
+    >
+
+    <ImageView
+        android:id="@+id/prodimg"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"
+        android:paddingBottom="10dp"
+        />
+    <TextView
+        android:id="@+id/prodname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jacket"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/prodimg"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="23dp"
+        />
+    <TextView
+        android:id="@+id/prodcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="apparel"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/prodimg"
+        app:layout_constraintTop_toBottomOf="@id/prodname"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/prodprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="105"
+        android:textColor="#253DA1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/prodimg"
+        app:layout_constraintTop_toBottomOf="@id/prodcategory"
+        />
+
+    <Spinner
+        android:id="@+id/dropdown_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toEndOf="@+id/prodimg"
+        app:layout_constraintTop_toBottomOf="@id/prodprice"
+        android:layout_marginTop="21dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:backgroundTint="@color/black"
+
+        />
+
+    <TextView
+        android:id="@+id/deleteCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#253DA1"
+        app:layout_constraintTop_toTopOf="@id/dropdown_menu"
+        app:layout_constraintStart_toEndOf="@id/dropdown_menu"
+        android:layout_marginLeft="16dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
